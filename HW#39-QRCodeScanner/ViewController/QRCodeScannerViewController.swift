@@ -41,6 +41,7 @@ class QRCodeScannerViewController: UIViewController {
         configuration.title = "Tap me"
         configuration.imagePadding = 20
         qrcodeScannerButton.configuration = configuration
+        // addTarget
         qrcodeScannerButton.addTarget(self, action: #selector(qrCodeScannerTapped), for: .touchUpInside)
         view.addSubview(qrcodeScannerButton)
 
@@ -62,8 +63,7 @@ class QRCodeScannerViewController: UIViewController {
     }
 
     func sendingMessage () {
-        if MFMessageComposeViewController.canSendText() == true {
-
+        if MFMessageComposeViewController.canSendText() {
             let composeVC = MFMessageComposeViewController()
             // The message who want to receive.
             composeVC.recipients = ["1922"]
