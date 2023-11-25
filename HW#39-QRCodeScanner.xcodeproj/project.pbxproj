@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D3D0A1EF2B11D20900F7229E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A1EE2B11D20900F7229E /* AppDelegate.swift */; };
 		D3D0A1F12B11D20900F7229E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A1F02B11D20900F7229E /* SceneDelegate.swift */; };
-		D3D0A1F32B11D20900F7229E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A1F22B11D20900F7229E /* ViewController.swift */; };
 		D3D0A1F62B11D20900F7229E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D0A1F42B11D20900F7229E /* Main.storyboard */; };
 		D3D0A1F92B11D20900F7229E /* HW_39_QRCodeScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A1F72B11D20900F7229E /* HW_39_QRCodeScanner.xcdatamodeld */; };
 		D3D0A1FB2B11D20B00F7229E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D0A1FA2B11D20B00F7229E /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		D3D0A2092B11D20B00F7229E /* HW_39_QRCodeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A2082B11D20B00F7229E /* HW_39_QRCodeScannerTests.swift */; };
 		D3D0A2132B11D20B00F7229E /* HW_39_QRCodeScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A2122B11D20B00F7229E /* HW_39_QRCodeScannerUITests.swift */; };
 		D3D0A2152B11D20B00F7229E /* HW_39_QRCodeScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A2142B11D20B00F7229E /* HW_39_QRCodeScannerUITestsLaunchTests.swift */; };
+		D3D0A2232B11D27A00F7229E /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D0A2222B11D27A00F7229E /* QRCodeScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		D3D0A1EB2B11D20900F7229E /* HW#39-QRCodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW#39-QRCodeScanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D0A1EE2B11D20900F7229E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D0A1F02B11D20900F7229E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3D0A1F22B11D20900F7229E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3D0A1F52B11D20900F7229E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3D0A1F82B11D20900F7229E /* HW_39_QRCodeScanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HW_39_QRCodeScanner.xcdatamodel; sourceTree = "<group>"; };
 		D3D0A1FA2B11D20B00F7229E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		D3D0A20E2B11D20B00F7229E /* HW#39-QRCodeScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW#39-QRCodeScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D0A2122B11D20B00F7229E /* HW_39_QRCodeScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_39_QRCodeScannerUITests.swift; sourceTree = "<group>"; };
 		D3D0A2142B11D20B00F7229E /* HW_39_QRCodeScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_39_QRCodeScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3D0A2222B11D27A00F7229E /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +101,9 @@
 		D3D0A1ED2B11D20900F7229E /* HW#39-QRCodeScanner */ = {
 			isa = PBXGroup;
 			children = (
-				D3D0A1EE2B11D20900F7229E /* AppDelegate.swift */,
-				D3D0A1F02B11D20900F7229E /* SceneDelegate.swift */,
-				D3D0A1F22B11D20900F7229E /* ViewController.swift */,
+				D3D0A2212B11D25800F7229E /* Supporting Files */,
+				D3D0A2242B11F0EE00F7229E /* ViewController */,
 				D3D0A1F42B11D20900F7229E /* Main.storyboard */,
-				D3D0A1FA2B11D20B00F7229E /* Assets.xcassets */,
-				D3D0A1FC2B11D20B00F7229E /* LaunchScreen.storyboard */,
 				D3D0A1FF2B11D20B00F7229E /* Info.plist */,
 				D3D0A1F72B11D20900F7229E /* HW_39_QRCodeScanner.xcdatamodeld */,
 			);
@@ -128,6 +125,25 @@
 				D3D0A2142B11D20B00F7229E /* HW_39_QRCodeScannerUITestsLaunchTests.swift */,
 			);
 			path = "HW#39-QRCodeScannerUITests";
+			sourceTree = "<group>";
+		};
+		D3D0A2212B11D25800F7229E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3D0A1EE2B11D20900F7229E /* AppDelegate.swift */,
+				D3D0A1F02B11D20900F7229E /* SceneDelegate.swift */,
+				D3D0A1FA2B11D20B00F7229E /* Assets.xcassets */,
+				D3D0A1FC2B11D20B00F7229E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3D0A2242B11F0EE00F7229E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3D0A2222B11D27A00F7229E /* QRCodeScannerViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D0A1F32B11D20900F7229E /* ViewController.swift in Sources */,
 				D3D0A1EF2B11D20900F7229E /* AppDelegate.swift in Sources */,
+				D3D0A2232B11D27A00F7229E /* QRCodeScannerViewController.swift in Sources */,
 				D3D0A1F92B11D20900F7229E /* HW_39_QRCodeScanner.xcdatamodeld in Sources */,
 				D3D0A1F12B11D20900F7229E /* SceneDelegate.swift in Sources */,
 			);
@@ -444,6 +460,7 @@
 				DEVELOPMENT_TEAM = 7NJ9W73ML8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HW#39-QRCodeScanner/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +489,7 @@
 				DEVELOPMENT_TEAM = 7NJ9W73ML8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HW#39-QRCodeScanner/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
