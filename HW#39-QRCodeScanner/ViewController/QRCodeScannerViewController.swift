@@ -60,6 +60,7 @@ class QRCodeScannerViewController: UIViewController {
         let documentCameraController = VNDocumentCameraViewController()
         documentCameraController.delegate = self
         present(documentCameraController, animated: true)
+
     }
 
     func sendingMessage () {
@@ -72,15 +73,19 @@ class QRCodeScannerViewController: UIViewController {
             composeVC.messageComposeDelegate = self
             self.present(composeVC, animated: true, completion: nil)
         } else {
-            print("error handing")
+            print("error handling")
         }
     }
 
     func sendingEmail () {
-        let mailComposeVC = MFMailComposeViewController()
-        mailComposeVC.mailComposeDelegate = self
-        mailComposeVC.setSubject("")
-        mailComposeVC.setMessageBody("", isHTML: true)
+        if MFMailComposeViewController.canSendMail() {
+            let mailComposeVC = MFMailComposeViewController()
+            mailComposeVC.mailComposeDelegate = self
+            mailComposeVC.setSubject("")
+            mailComposeVC.setMessageBody("", isHTML: true)
+        } else {
+            print("error handling")
+        }
     }
 }
 
@@ -95,7 +100,18 @@ extension QRCodeScannerViewController: VNDocumentCameraViewControllerDelegate {
         processImage(image: image)
         // disppear
         dismiss(animated: true, completion: nil)
+
+        if shouldSendMessage {
+            sendingMessage()
+            print("sendingMessage")
+        }
     }
+
+    var shouldSendMessage: Bool {
+        // Implement your logic here
+        return true // or false
+    }
+
 
     // 使用 VNImageRequestHandler & VNDetectBarcodesRequest 解析圖片裡的 QR Code
     func processImage(image: UIImage) {
@@ -117,7 +133,6 @@ extension QRCodeScannerViewController: VNDocumentCameraViewControllerDelegate {
         }
         do {
             try handler.perform([request])
-            sendingMessage()
             print(observation)
         } catch {
             print("error")
