@@ -150,6 +150,7 @@ extension QRCodeScannerViewController: MFMessageComposeViewControllerDelegate {
     }
 }
 
+// MFMailComposeViewControllerDelegate
 extension QRCodeScannerViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
 
